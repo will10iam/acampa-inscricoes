@@ -626,17 +626,19 @@ body {
 
   .countdown-container {
     margin-top: 100px;
+    padding: 0 20px 0 10px;
   }
 
   .button1 {
     margin-top: 150px;
+    margin-bottom: -20px;
   }
 
   .logo {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
-    margin-top: -340px;
+    margin-top: -300px;
   }
 
   /* ESTILIZAÇÃO DO FORMS */
