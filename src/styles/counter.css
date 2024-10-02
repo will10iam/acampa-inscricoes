@@ -52,6 +52,7 @@
     .counter-text {
         font-size: 0.8rem;
         margin-left: -5px;
+        margin-top: 50px;
     }
 
     .countdown-container {

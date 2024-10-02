@@ -95,7 +95,7 @@ body {
 }
 
 .logo img {
-  width: 400px;
+  width: 300px;
 }
 
 .button1 {
@@ -625,17 +625,18 @@ body {
   }
 
   .countdown-container {
-    margin-top: -40px;
+    margin-top: 100px;
   }
 
   .button1 {
-    margin-top: 120px;
+    margin-top: 150px;
   }
 
   .logo {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    margin-top: -340px;
   }
 
   /* ESTILIZAÇÃO DO FORMS */
