@@ -1,0 +1,28 @@
+.checks {
+    display: flex;
+    flex-direction: row;
+}
+
+.forms {
+    padding: 0px 20px 0px 20px;
+}
+
+.forms label {
+    font-family: 'Gosha Sans', sans-serif;
+}
+
+.forms input {
+    font-family: 'Gosha Sans', sans-serif;
+}
+
+.forms option {
+    font-family: 'Gosha Sans', sans-serif;
+}
+
+.forms select {
+    font-family: 'Gosha Sans', sans-serif;
+}
+
+.forms button {
+    font-family: 'Gosha Sans', sans-serif;
+}
