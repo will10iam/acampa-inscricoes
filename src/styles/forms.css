@@ -4,7 +4,7 @@
 }
 
 .forms {
-    padding: 0px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .forms label {
@@ -25,4 +25,31 @@
 
 .forms button {
     font-family: 'Gosha Sans', sans-serif;
+}
+
+@media screen and (max-width : 600px) {
+    .col-3 {
+        width: 50%;
+    }
+
+    .extra {
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    .form-control {
+        font-size: 13px;
+    }
+
+    .white {
+        margin-left: 9px;
+    }
+
+    .white button {
+        font-size: 15px;
+    }
+
 }

@@ -113,7 +113,7 @@ export default function SignupForm() {
                 </div>
 
                 <div class="col-3">
-                    <label for="inputAddress2" class="form-label text-light">Informe um nº de Documento</label>
+                    <label for="inputAddress2" class="form-label text-light">Nº de Documento</label>
                     <input type="text"
                         class="form-control"
                         id="inputAddress2"
@@ -148,7 +148,7 @@ export default function SignupForm() {
                 </div>
 
                 <div class="col-4">
-                    <label for="inputAddress3" class="form-label text-light">É a primeira vez que acampa com a gente?</label>
+                    <label for="inputAddress3" class="form-label text-light" className="extra">É a primeira vez que acampa com a gente?</label>
                     <input type="text"
                         class="form-control"
                         id="inputAddress3"
@@ -161,7 +161,7 @@ export default function SignupForm() {
                 </div>
 
                 <div class="col-4">
-                    <label for="inputAddress3" class="form-label text-light">Precisa de carona para a chácara?</label>
+                    <label for="inputAddress3" class="form-label text-light" className="extra">Precisa de carona para a chácara?</label>
                     <input type="text"
                         class="form-control"
                         id="inputAddress3"
@@ -174,7 +174,7 @@ export default function SignupForm() {
                 </div>
 
                 <div class="col-4">
-                    <label for="inputAddress3" class="form-label text-light">Topa brincar todas as brincadeiras?</label>
+                    <label for="inputAddress3" class="form-label text-light" className="extra">Topa brincar todas as brincadeiras?</label>
                     <input type="text"
                         class="form-control text-opacity-25"
                         id="inputAddress3"
