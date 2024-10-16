@@ -187,8 +187,7 @@ export default function SignupForm() {
                 </div>
 
                 <div className="white">
-                    <p>ATENÇÃO! Menores de 18 anos, clique no botão para baixar a ficha de autorização</p>
-                    <a href="AUTACAMP" download="AUTACAMP"><button type="button">Baixar Ficha</button></a>
+                    <p>ATENÇÃO! Menores de 18 anos, peça sua ficha de autorização à diretoria.</p>
                 </div>
 
                 <div class="col-md-12 text-md-center">
@@ -203,9 +202,8 @@ export default function SignupForm() {
                 </div>
 
                 <div class="col-md-12">
-                    <p className="whats">Se precisar de ajuda para pagar ou tenha alguma dúvida,
-                        <a href='https://api.whatsapp.com/send?phone=5519989318887&text=Olá!%20Queria%20conversar%20sobre%20o%20Acampa20255.'
-                            target='_blank' rel='noreferrer'> fale com a gente</a></p>
+                    <p className="whats">Se precisar de ajuda para pagar ou tenha alguma dúvida <a href='https://api.whatsapp.com/send?phone=5519989318887&text=Olá!%20Queria%20conversar%20sobre%20o%20Acampa20255.'
+                        target='_blank' rel='noreferrer'>fale com a gente</a></p>
                 </div>
 
 

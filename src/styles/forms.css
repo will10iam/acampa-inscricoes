@@ -27,6 +27,10 @@
     font-family: 'Gosha Sans', sans-serif;
 }
 
+.extra {
+    color: white;
+}
+
 @media screen and (max-width : 600px) {
     .col-3 {
         width: 50%;
@@ -46,10 +50,6 @@
 
     .white {
         margin-left: 9px;
-    }
-
-    .white button {
-        font-size: 15px;
     }
 
 }
