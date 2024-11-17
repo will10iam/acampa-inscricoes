@@ -43,7 +43,6 @@ export default function SignupForm() {
         e.preventDefault();
         try {
             await addDoc(collection(db, "inscricoes"), formData);
-            alert('Inscrição realizada com sucesso!');
             toast.success('Inscrição realizada com sucesso!')
             setFormData({
                 profileImage: null,
