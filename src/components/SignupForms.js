@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import Button from "./Button";
 import "../styles/forms.css";
+import { toast } from "react-toastify";
 
 
 export default function SignupForm() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         profileImage: null,
         name: '',
-        email: '',
         doc: '',
         phone: '',
         birthday: '',
@@ -22,6 +24,8 @@ export default function SignupForm() {
         allergic: '',
         payment: '',
     });
+
+
 
     const handleChange = (e) => {
 
@@ -40,9 +44,27 @@ export default function SignupForm() {
         try {
             await addDoc(collection(db, "inscricoes"), formData);
             alert('Inscrição realizada com sucesso!');
+            toast.success('Inscrição realizada com sucesso!')
+            setFormData({
+                profileImage: null,
+                name: '',
+                doc: '',
+                phone: '',
+                birthday: '',
+                church: '',
+                imageUrl: '',
+                firstTime: '',
+                transport: '',
+                pranks: '',
+                remedy: '',
+                allergic: '',
+                payment: '',
+            })
+            navigate('/thanks')
         } catch (e) {
             console.log("Erro ao adicionar documento: ", e);
-            alert('Erro ao enviar inscrição, tente novamente.');
+            toast.error('Erro ao enviar inscrição, tente novamente.');
+
         }
     };
 
@@ -75,7 +97,7 @@ export default function SignupForm() {
                         required
                     />
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                     <label for="inputPassword4" class="form-label text-light">Quando nasceu?</label>
                     <input type="date"
                         class="form-control"
@@ -87,7 +109,7 @@ export default function SignupForm() {
                         required
                     />
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                     <label for="inputAddress2" class="form-label text-light">Qual seu telefone?</label>
                     <input type="text"
                         class="form-control"
@@ -99,20 +121,8 @@ export default function SignupForm() {
                         required
                     />
                 </div>
-                <div class="col-3">
-                    <label for="inputAddress" class="form-label text-light">Qual seu email?</label>
-                    <input type="email"
-                        class="form-control"
-                        id="inputAddress"
-                        placeholder="Digite seu email"
-                        name="email"
-                        onChange={handleChange}
-                        value={formData.email}
-                        required
-                    />
-                </div>
 
-                <div class="col-3">
+                <div class="col-4">
                     <label for="inputAddress2" class="form-label text-light">Nº de Documento</label>
                     <input type="text"
                         class="form-control"
