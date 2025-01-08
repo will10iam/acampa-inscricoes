@@ -203,10 +203,8 @@ export default function SignupForm() {
                     <label for="inputState" class="form-label text-light">Qual será a forma de pagamento?</label>
                     <select id="inputState" class="form-select" name="payment" onChange={handleChange} required>
                         <option selected value="À vista">À Vista - 250,00</option>
-                        <option value="2x">2x de 125,00</option>
-                        <option value="3x">3x de 83,35</option>
-                        <option value="4x">4x de 62,50</option>
-                        <option value="5x">5x de 50,00</option>
+                        <option value="Pix">Pix parcelado (máximo 2x)</option>
+                        <option value="Crédito">Parcelado no crédito, com juros (consultar informações)</option>
                     </select>
                 </div>
 
