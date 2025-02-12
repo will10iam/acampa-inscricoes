@@ -7,7 +7,7 @@ import Title from "../../components/Title";
 import logo from "../../assets/logo.png"
 
 export default function Countdown() {
-    const [day, hour, minute, second] = useCountdown('Mar 01, 2025 00:00:00');
+    const [day, hour, minute, second] = useCountdown('Mar 01, 2025 09:00:00');
 
     return (
         <div className="App">
